@@ -1,5 +1,6 @@
 @import url("css/foto.css");
 @import url("css/curiosidades.css");
+@import url("css/media.css");
 
 *{
     box-sizing: border-box;
@@ -74,9 +75,14 @@
 }
 
 .texto{
+    padding: 1vh;
     text-align: center;
 }
 
+.tema{
+    padding: 1vh;
+    text-align: center;
+}
 
 .turma{
     background-color: #EA8007;
@@ -137,6 +143,10 @@
 
     .container-image{
         flex-direction: column;
+    }
+
+    .texto{
+        text-align: center;
     }
 
     
