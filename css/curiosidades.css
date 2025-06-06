@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header
 .header {
     background-image: url('/Feira---bom/imagens/logo.png');
     background-size: cover;
@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 .nav-bar {
     display: flex;
