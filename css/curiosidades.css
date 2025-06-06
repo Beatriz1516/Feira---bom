@@ -1,266 +1,116 @@
-/* Reset e estilos base */
-* {
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header
-.header {
-    background-image: url('/Feira---bom/imagens/logo.png');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* Text styles */
+.texto {
     text-align: center;
-}
-
-.header-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    width: 100%;
-}
-
-.logo-container {
-    width: 100px;
-    height: 100px;
-}
-
-.logo {
-    width: 100%;
-    height: auto;
-}
-
-.header-content {
-    color: white;
-    margin-bottom: 2rem;
-}
-
-.header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.header-content p {
-    font-size: 1.2rem;
-    font-style: italic;
-}
-
-/* Menu Hamburguer */
-.hamburger {
-    display: none;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white;
-    transition: all 0.3s ease;
-}
-
-/* Nav Menu */
-.navmenu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-item {
-    margin: 0 10px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
     font-size: 1.1rem;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 }
 
-.nav-link:hover {
-    color: #EA8007;
-}
-
-.nav-link.active {
-    color: #EA8007;
-    font-weight: bold;
-}
-
-/* Conteúdo principal */
-.container-image {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+.tema {
     text-align: center;
+    color: #2c3e50;
+    margin: 30px 0 20px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+/* Image container */
+.container-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .container-image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
 }
 
-.texto {
-    margin: 1.5rem 0;
-    font-size: 1.1rem;
-    text-align: justify;
-    line-height: 1.8;
-}
-
-.tema {
-    color: #EA8007;
-    font-size: 2rem;
-    margin: 2rem 0 1rem;
-    text-align: center;
-    border-bottom: 2px solid #301D08;
-    padding-bottom: 0.5rem;
-    display: inline-block;
-}
-
-/* Botões */
-button {
-    margin: 1.5rem 0;
+/* Button styles */
+.saiba-mais-btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #301D08 !important;
-    transform: scale(1.05);
+.saiba-mais-btn:hover {
+    background-color: #1a252f;
 }
 
-button a {
+.saiba-mais-btn a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Seção da turma */
+/* Turma section */
 .turma {
-    background-color: #301D08;
+    background-color: #2c3e50;
     color: white;
-    padding: 2rem;
     text-align: center;
-    margin-top: 3rem;
-    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1.1rem;
 }
 
-/* Rodapé */
+/* Footer styles */
 .rodape {
-    background-color: #EA8007;
+    background-color: #1a252f;
     color: white;
-    padding: 2rem;
     text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .rodape h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
 .rodape h4 {
-    font-size: 1.2rem;
-    margin: 1rem 0 0.5rem;
+    margin: 15px 0 10px;
+    font-size: 1.1rem;
 }
 
 .rodape h5 {
+    margin: 5px 0;
     font-size: 1rem;
-    margin: 0.3rem 0;
     font-weight: normal;
 }
 
-/* Responsividade */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .navmenu {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        flex-direction: column;
-        background-color: #301D08;
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s;
-        padding-top: 80px;
-        gap: 2rem;
-    }
-
-    .navmenu.active {
-        left: 0;
-    }
-
-    .header-content h1 {
-        font-size: 2rem;
-    }
-
-    .header-content p {
-        font-size: 1rem;
-    }
-
     .texto {
         font-size: 1rem;
     }
-
+    
     .tema {
         font-size: 1.5rem;
     }
-}
-
-/* Animações */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.container-image img {
-    animation: fadeIn 1s ease-in;
+    
+    .turma {
+        font-size: 1rem;
+    }
 }
